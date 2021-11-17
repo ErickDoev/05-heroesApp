@@ -8,6 +8,10 @@ import { HeroeComponent } from './pages/heroe/heroe.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from '../material/material.module';
+import { HeroeCardComponent } from './components/heroe-card/heroe-card.component';
+import { ImagenPipe } from './pipes/imagen.pipe';
+import { FormsModule } from '@angular/forms';
+import { ConfirmarComponent } from './components/confirmar/confirmar.component';
 
 
 
@@ -17,11 +21,15 @@ import { MaterialModule } from '../material/material.module';
     BuscarComponent,
     ListadoComponent,
     HeroeComponent,
-    HomeComponent
+    HomeComponent,
+    HeroeCardComponent,
+    ImagenPipe,
+    ConfirmarComponent
   ],
   imports: [
     CommonModule,
     FlexLayoutModule,
+    FormsModule,
     HeroesRoutingModule,
     MaterialModule
   ]
